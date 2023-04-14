@@ -7,5 +7,56 @@
     <title>Age Calculator</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <main class="container">
+      <div class="card">
+        <section class="input-grid">
+          <div class="input-group">
+            <label for="day" class="label">day</label>
+            <input type="text" id="day" class="input day" placeholder="DD" />
+            <span id="day-error" class="error-line"></span>
+          </div>
+          <div class="input-group">
+            <label for="month" class="label">month</label>
+            <input
+              type="text"
+              id="month"
+              class="input month"
+              placeholder="MM"
+            />
+            <span id="month-error" class="error-line"></span>
+          </div>
+          <div class="input-group">
+            <label for="year" class="label">year</label>
+            <input
+              type="text"
+              id="year"
+              class="input year"
+              placeholder="YYYY"
+            />
+            <span id="year-error" class="error-line"></span>
+          </div>
+          <div class="submit-btn">
+            <button type="button" class="btn">
+              <img src="./images/icon-arrow.svg" alt="" />
+            </button>
+          </div>
+        </section>
+        <section class="output-display">
+          <div class="output-group">
+            <span class="output years">--</span>
+            <span>years</span>
+          </div>
+          <div class="output-group">
+            <span class="output months">--</span>
+            <span>months</span>
+          </div>
+          <div class="output-group">
+            <span class="output days">--</span>
+            <span>days</span>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>
