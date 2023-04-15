@@ -21,8 +21,6 @@ var error = {
 };
 var month_days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
-const ShowError = () => {};
-
 const ValidateInput = (
   today_day,
   today_month,
@@ -56,7 +54,6 @@ const ValidateInput = (
   }
 
   if (error.day || error.month || error.year) {
-    ShowError();
     return;
   }
 
@@ -88,7 +85,6 @@ const ValidateInput = (
     error.year = false;
   }
 
-  ShowError();
   return;
 };
 
