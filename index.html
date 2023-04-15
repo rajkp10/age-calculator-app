@@ -13,13 +13,13 @@
         <section class="input-grid">
           <div class="input-group">
             <label for="day" class="label">day</label>
-            <input type="text" id="day" class="input day" placeholder="DD" />
+            <input type="number" id="day" class="input day" placeholder="DD" />
             <span id="day-error" class="error-line"></span>
           </div>
           <div class="input-group">
             <label for="month" class="label">month</label>
             <input
-              type="text"
+              type="number"
               id="month"
               class="input month"
               placeholder="MM"
@@ -29,7 +29,7 @@
           <div class="input-group">
             <label for="year" class="label">year</label>
             <input
-              type="text"
+              type="number"
               id="year"
               class="input year"
               placeholder="YYYY"
@@ -44,19 +44,20 @@
         </section>
         <section class="output-display">
           <div class="output-group">
-            <span class="output years">--</span>
+            <span id="years" class="output">--</span>
             <span>years</span>
           </div>
           <div class="output-group">
-            <span class="output months">--</span>
+            <span id="months" class="output">--</span>
             <span>months</span>
           </div>
           <div class="output-group">
-            <span class="output days">--</span>
+            <span id="days" class="output">--</span>
             <span>days</span>
           </div>
         </section>
       </div>
     </main>
+    <script src="./js/script.js"></script>
   </body>
 </html>
